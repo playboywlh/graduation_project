@@ -1,4 +1,5 @@
-#MOSSE (refer to "Visual Object Tracking using Adaptive Correlation Filters")
+#MOSSE (refer to the paper "Visual Object Tracking using Adaptive Correlation Filters" and the code on https://github.com/TianhongDai/mosse-object-tracking.git)
+#2020.1.10 by wanglihua 1132967661@qq.com
 
 import numpy as np
 import cv2
