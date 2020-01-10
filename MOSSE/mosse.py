@@ -47,8 +47,10 @@ class mosse:
         b=180/6
         r=a+(b-a)*np.random.uniform()
 
-        matrix_rot=cv2.getRotationMatrix2D((image.shape[-1]/2,image.shape[-2]),r,1)
+        matrix_rot=cv2.getRotationMatrix2D((image.shape[1]/2,image.shape[0]/2),r,1)
         image_rot=cv2.warpAffine(image,matrix_rot,(image.shape[1],image.shape[0]))
+        cv2.imshow('image_rot',image_rot.astype(np.uint8))
+        cv2.waitKey()
         return image_rot
 
     def _pre_process(self,frame):
